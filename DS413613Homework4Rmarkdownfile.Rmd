@@ -9,4 +9,8 @@ output: word_document
 library(tidyverse)
 mpg
 
+ggplot(data = mpg)+
+  geom_point(mapping = aes(x = hwy, y = cty)) +
+  geom_smooth(method = lm, mapping =aes(x = hwy, y = cty))
+
 ```
